@@ -5,6 +5,8 @@
 }
 html{
   background:#000000;
+  font-family:sans-serif;
+  color:green;
 }
 body{
   width:1024px;
@@ -19,17 +21,18 @@ section{
   position:relative;
   width:200px;
   height:200px;
-  -webkit-transform-style:preserve-3d;
-  -webkit-animation:spinny 10s linear infinite;
   margin:200px auto;
-  opacity:0.5;
+  -webkit-transform-style:preserve-3d;
 }
 div{
   width:200px;
   height:200px;
   position:absolute;
-  -webkit-transform-style:preserve-3d;
   border:2px solid green;
+  background:black;
+  -webkit-transform-style:preserve-3d;
+  text-align:center;
+  font-size:200px;
 }
 
 div:nth-child(1){

@@ -1,6 +1,7 @@
 window.onload = function(){
   var container = document.getElementsByTagName("body")[0]; //could be any element
   var display = document.getElementsByTagName("section")[0]; //could be any element
+  var sides = document.getElementsByTagName("div");
   var touched = false; // a useful flag for restructing otehr actions
   var X = 0; // the amount we increment
   var Y = 0;
@@ -39,7 +40,6 @@ window.onload = function(){
     startY = newY;
     Y += deltaY;
     Y = (((Y % 360) + 360) % 360);// a modulus fix.
-
     display.style.webkitTransform = "rotateY(" + X + "deg) rotateX(" + Y + "deg)";
   }
   var rotateEnd = function(){
