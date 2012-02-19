@@ -29,10 +29,18 @@ div{
   height:200px;
   position:absolute;
   border:2px solid green;
-  background:black;
+  background:rgba(255,255,255,0.5);
   -webkit-transform-style:preserve-3d;
   text-align:center;
   font-size:200px;
+}
+
+span{
+  position:absolute;
+  width:20px;
+  height:20px;
+  background:grey;
+  -webkit-transform-style:preserve-3d;
 }
 
 div:nth-child(1){
